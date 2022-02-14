@@ -79,7 +79,7 @@ class WordleGame:
         print("Word Chosen")
 
         for i in range(self.tries):
-            input_word = input(f"Enter input (Try {i+1})>>\n" )
+            input_word = input(f"Enter input (Try {i+1})>>\n")
 
             comp_mtrx = self.compare_words(input_word, chosen_word)
 
