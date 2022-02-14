@@ -75,7 +75,7 @@ class WordleGame:
         wordle_words = self.read_file()
         print("File Read")
 
-        chosen_word = self.choose_random_word(wordle_words)
+        chosen_word = self.choose_random_word(wordle_words )
         print("Word Chosen")
 
         for i in range(self.tries):
