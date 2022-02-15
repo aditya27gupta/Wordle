@@ -27,6 +27,8 @@ class WordleGame:
 
     def compare_words(self, input_word: str, chosen_word: str) -> List:
 
+        input_word, chosen_word = input_word.lower(), chosen_word.lower()
+
         input_word_dict = dict()
         chosen_word_dict = {letter: chosen_word.count(letter) for letter in set(chosen_word)}
 
@@ -52,7 +54,6 @@ class WordleGame:
                     compare_matrix.append(0)
                     count += 1
                     continue
-
                 compare_matrix.append(1)
 
             else:
