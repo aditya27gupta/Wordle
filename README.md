@@ -13,6 +13,9 @@ Wordle Word: **S T R A P S**
 Input: **S L E E P**
 
 Here,
+
 S would be shown colored Green implying it is present and in right position
+
 L would be normal as it is not present in Wordle Word
+
 P would be colored Yellow implying it is present in word just in wrong position
