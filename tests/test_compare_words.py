@@ -1,6 +1,9 @@
 import pytest
 
 from src.wordle_game import WordleGame
+from src.log import get_logger
+
+logger = get_logger("TEST Compare Function")
 
 input_output = [
     ("aaaaa", "abcde", [2, 0, 0, 0, 0]),
@@ -18,7 +21,7 @@ def test_compare_test(input_word, chosen_word, output):
     file_loc = "example.txt"
     tries = 6
 
-    class_object = WordleGame(file_loc, tries)
+    class_object = WordleGame(file_loc, tries, logger)
 
     result = class_object.compare_words(input_word, chosen_word)
 
