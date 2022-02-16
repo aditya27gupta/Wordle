@@ -8,12 +8,9 @@ Players have six attempts to guess a five-letter word, with feedback given for e
 
 Example:
 
-Wordle Word:
-S T R A P S
+Wordle Word: **S T R A P S**
 
-Input:
-
-S L E E P
+Input: **S L E E P**
 
 Here,
 S would be shown colored Green implying it is present and in right position
