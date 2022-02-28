@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import enum
 import random
 from typing import Dict, List
 from dataclasses import dataclass
@@ -33,51 +34,34 @@ class WordleGame:
                 self.logger.debug(f"Input Selected for {idx+1} try: {input_text}")
                 return input_text
 
-    def add_to_dict(self, letter: str, dictionary: Dict) -> None:
-        if letter not in dictionary:
-            dictionary[letter] = 1
-        else:
-            dictionary[letter] += 1
-
     def compare_words(self, input_word: str, chosen_word: str) -> List:
 
         input_word, chosen_word = input_word.lower(), chosen_word.lower()
+        cmp_matrix = []
+        chosen_word_mark = {idx: False for idx, _ in enumerate(chosen_word)}
 
-        input_word_dict = dict()
-        chosen_word_dict = {letter: chosen_word.count(letter) for letter in set(chosen_word)}
-        self.logger.debug(f"Chosen Word Dict: {chosen_word_dict}")
-
-        if input_word == chosen_word:
-            return [1]
-
-        compare_matrix, count = [], 0
-
-        for letter1, letter2 in zip(input_word, chosen_word):
-            self.logger.debug(f"Count: {count},Letter1: {letter1}, Letter2: {letter2}")
-
-            self.add_to_dict(letter1, input_word_dict)
-            self.logger.debug(f"Input Word Dict: {input_word_dict}")
-
+        for i, (letter1, letter2) in enumerate(zip(input_word, chosen_word)):
+            check = True
             if letter1 == letter2:
-                compare_matrix.append(2)
+                cmp_matrix.append(2)
+                chosen_word_mark[i] = True
 
-            elif input_word_dict[letter1] <= chosen_word_dict.get(letter1, 0):
-                pos = chosen_word.find(letter1, count, 5)
-                self.logger.debug(f"Pos Value: {pos}")
-                if pos < 0:
-                    pass
-                elif input_word[pos] == letter1:
-                    compare_matrix.append(0)
-                    count += 1
-                    continue
-                compare_matrix.append(1)
-
+            elif letter1 in chosen_word:
+                for j, _ in enumerate(chosen_word):
+                    if letter1 == chosen_word[j] and input_word[j] != chosen_word[j] and not chosen_word_mark[j]:
+                        cmp_matrix.append(1)
+                        chosen_word_mark[j] = True
+                        check = False
+                        break
+                if check:
+                    cmp_matrix.append(0)
             else:
-                compare_matrix.append(0)
+                cmp_matrix.append(0)
 
-            count += 1
+            self.logger.debug(f"Letter from Input: {letter1} and compare_matrix: {cmp_matrix}")
+            self.logger.debug(f"Chosen Word Letter Status: {chosen_word_mark}")
 
-        return compare_matrix
+        return cmp_matrix
 
     def colorize_word(self, input_word: str, compare_matrix: List) -> None:
         color_dict = {0: "\033[0m", 1: "\033[93m", 2: "\033[92m"}
@@ -92,19 +76,18 @@ class WordleGame:
 
     def start_game(self) -> bool:
         wordle_words = self.read_file()
-        print("File Read")
+        self.logger.debug("Wordle File Read")
 
         chosen_word = self.choose_random_word(wordle_words)
-        print("Word Chosen")
+        self.logger.debug("Wordle Word Chosen")
 
         for i in range(self.tries):
             input_word = self.get_input(i)
-
             comp_mtrx = self.compare_words(input_word, chosen_word)
-
-            if len(comp_mtrx) == 1:
+            if set(comp_mtrx) == {
+                2,
+            }:
                 return True
-
             self.colorize_word(input_word, comp_mtrx)
 
         print(f"Correct word was : {chosen_word.upper()}")

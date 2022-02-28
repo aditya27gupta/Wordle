@@ -1,69 +1,87 @@
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 0,Letter1: a, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 4
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 1,Letter1: a, Letter2: c
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 2}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 2,Letter1: a, Letter2: d
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 3}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 3,Letter1: a, Letter2: e
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 4}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 4,Letter1: a, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 5}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Chosen Word Dict: {'c': 1, 'd': 1, 'e': 1, 'a': 1, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 0,Letter1: a, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 4
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 1,Letter1: b, Letter2: c
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 2,Letter1: c, Letter2: d
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 3,Letter1: d, Letter2: e
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1, 'd': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 4,Letter1: e, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1, 'd': 1, 'e': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Chosen Word Dict: {'c': 1, 'd': 1, 'e': 1, 'a': 1, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 0,Letter1: b, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 1,Letter1: c, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'b': 1, 'c': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 2
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 2,Letter1: d, Letter2: c
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'b': 1, 'c': 1, 'd': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 3
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 3,Letter1: e, Letter2: d
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'b': 1, 'c': 1, 'd': 1, 'e': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 4
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 4,Letter1: a, Letter2: e
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'b': 1, 'c': 1, 'd': 1, 'e': 1, 'a': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Chosen Word Dict: {'c': 1, 'd': 1, 'e': 1, 'a': 1, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 0,Letter1: a, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 1,Letter1: a, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 2}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 2,Letter1: b, Letter2: c
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 2, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 3,Letter1: b, Letter2: d
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 2, 'b': 2}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 4,Letter1: c, Letter2: e
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 2, 'b': 2, 'c': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: -1
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Chosen Word Dict: {'c': 1, 'a': 2, 'b': 2}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 0,Letter1: a, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 1,Letter1: b, Letter2: a
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 2
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 2,Letter1: c, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Pos Value: 4
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 3,Letter1: d, Letter2: b
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1, 'd': 1}
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Count: 4,Letter1: e, Letter2: c
-16-Feb-22 22:27:58 : wordle_game.py : compare_words : DEBUG : Input Word Dict: {'a': 1, 'b': 1, 'c': 1, 'd': 1, 'e': 1}
+28-Feb-22 17:56:24 : main.py : <module> : DEBUG : File Loc: ./assets/wordle-words.txt
+28-Feb-22 17:56:24 : main.py : <module> : DEBUG : No of Tries: 6
+28-Feb-22 17:56:24 : main.py : <module> : DEBUG : wordleGame Class Intantiated
+28-Feb-22 17:56:24 : wordle_game.py : read_file : DEBUG : File Read
+28-Feb-22 17:56:24 : wordle_game.py : start_game : DEBUG : Wordle File Read
+28-Feb-22 17:56:24 : wordle_game.py : choose_random_word : DEBUG : Random Word Selected: diked
+28-Feb-22 17:56:24 : wordle_game.py : start_game : DEBUG : Wordle Word Chosen
+28-Feb-22 17:56:39 : wordle_game.py : get_input : DEBUG : Input Provided for 1 try: abcde
+28-Feb-22 17:56:39 : wordle_game.py : get_input : DEBUG : Input Selected for 1 try: abcde
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Letter from Input: a and compare_matrix: [0]
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: False, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Letter from Input: b and compare_matrix: [0, 0]
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: False, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Letter from Input: c and compare_matrix: [0, 0, 0]
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: False, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [0, 0, 0, 1]
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [0, 0, 0, 1, 1]
+28-Feb-22 17:56:39 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:56:39 : wordle_game.py : colorize_word : DEBUG : Input Word: abcde, Compare Matrix: [0, 0, 0, 1, 1]
+28-Feb-22 17:56:47 : wordle_game.py : get_input : DEBUG : Input Provided for 2 try: death
+28-Feb-22 17:56:47 : wordle_game.py : get_input : DEBUG : Input Selected for 2 try: death
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [2]
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 1]
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Letter from Input: a and compare_matrix: [2, 1, 0]
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Letter from Input: t and compare_matrix: [2, 1, 0, 0]
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Letter from Input: h and compare_matrix: [2, 1, 0, 0, 0]
+28-Feb-22 17:56:47 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:56:47 : wordle_game.py : colorize_word : DEBUG : Input Word: death, Compare Matrix: [2, 1, 0, 0, 0]
+28-Feb-22 17:57:03 : wordle_game.py : get_input : DEBUG : Input Provided for 3 try: doers
+28-Feb-22 17:57:03 : wordle_game.py : get_input : DEBUG : Input Selected for 3 try: doers
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [2]
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Letter from Input: o and compare_matrix: [2, 0]
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0, 1]
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Letter from Input: r and compare_matrix: [2, 0, 1, 0]
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Letter from Input: s and compare_matrix: [2, 0, 1, 0, 0]
+28-Feb-22 17:57:03 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:03 : wordle_game.py : colorize_word : DEBUG : Input Word: doers, Compare Matrix: [2, 0, 1, 0, 0]
+28-Feb-22 17:57:20 : wordle_game.py : get_input : DEBUG : Input Provided for 4 try: dmneq
+28-Feb-22 17:57:20 : wordle_game.py : get_input : DEBUG : Input Selected for 4 try: dmneq
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [2]
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Letter from Input: m and compare_matrix: [2, 0]
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Letter from Input: n and compare_matrix: [2, 0, 0]
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0, 0, 2]
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Letter from Input: q and compare_matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:57:20 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:20 : wordle_game.py : colorize_word : DEBUG : Input Word: dmneq, Compare Matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:57:35 : wordle_game.py : get_input : DEBUG : Input Provided for 5 try: dezel
+28-Feb-22 17:57:35 : wordle_game.py : get_input : DEBUG : Input Selected for 5 try: dezel
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [2]
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0]
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Letter from Input: z and compare_matrix: [2, 0, 0]
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0, 0, 2]
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Letter from Input: l and compare_matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:57:35 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:57:35 : wordle_game.py : colorize_word : DEBUG : Input Word: dezel, Compare Matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:57:49 : wordle_game.py : get_input : DEBUG : Input Provided for 6 try: damned
+28-Feb-22 17:58:10 : wordle_game.py : get_input : DEBUG : Input Provided for 6 try: dweel
+28-Feb-22 17:58:10 : wordle_game.py : get_input : DEBUG : Input Selected for 6 try: dweel
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Letter from Input: d and compare_matrix: [2]
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Letter from Input: w and compare_matrix: [2, 0]
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0, 0]
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: False, 4: False}
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Letter from Input: e and compare_matrix: [2, 0, 0, 2]
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Letter from Input: l and compare_matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:58:10 : wordle_game.py : compare_words : DEBUG : Chosen Word Letter Status: {0: True, 1: False, 2: False, 3: True, 4: False}
+28-Feb-22 17:58:10 : wordle_game.py : colorize_word : DEBUG : Input Word: dweel, Compare Matrix: [2, 0, 0, 2, 0]
+28-Feb-22 17:58:10 : main.py : <module> : DEBUG : Check variable value: False

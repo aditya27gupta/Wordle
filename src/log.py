@@ -4,7 +4,7 @@ from logging import handlers
 
 def get_logger(mod_name: str):
     logger = logging.getLogger(mod_name)
-    handler = handlers.RotatingFileHandler(filename="./logs/app.log", mode="a", maxBytes=10240, backupCount=1)
+    handler = handlers.RotatingFileHandler(filename="./logs/app.log", mode="a", maxBytes=102400, backupCount=1)
     formatter = logging.Formatter(
         "%(asctime)s : %(filename)s : %(funcName)s : %(levelname)s : %(message)s", datefmt="%d-%b-%y %H:%M:%S"
     )

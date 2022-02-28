@@ -4,6 +4,8 @@ from src.wordle_game import WordleGame
 from src.log import get_logger
 
 logger = get_logger("TEST Compare Function")
+logger.disabled = True 
+
 
 input_output = [
     ("aaaaa", "abcde", [2, 0, 0, 0, 0]),
