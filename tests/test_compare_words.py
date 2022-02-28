@@ -4,7 +4,7 @@ from src.wordle_game import WordleGame
 from src.log import get_logger
 
 logger = get_logger("TEST Compare Function")
-logger.disabled = True 
+logger.disabled = True
 
 
 input_output = [
