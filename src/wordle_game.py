@@ -13,17 +13,20 @@ class WordleGame:
     tries: int
     logger: Logger
 
+    # Read method to get list of wordle words in a list
     def read_file(self) -> List:
         with open(self.wordle_file_loc, mode="r") as read_file:
             self.logger.debug("File Read")
             word_list = [word.strip() for word in read_file.readlines()]
         return word_list
 
+    # Function to get a random word out of list
     def choose_random_word(self, wordlist: List) -> str:
         word = random.choice(wordlist)
         self.logger.debug(f"Random Word Selected: {word}")
         return word
 
+    # Input method that validates input is a string and is of length 5
     def get_input(self, idx: int) -> str:
 
         while True:
@@ -34,6 +37,7 @@ class WordleGame:
                 self.logger.debug(f"Input Selected for {idx+1} try: {input_text}")
                 return input_text
 
+    # Compare method to get comparison list based on position of letters in input and wordle word
     def compare_words(self, input_word: str, chosen_word: str) -> List:
 
         input_word, chosen_word = input_word.lower(), chosen_word.lower()
@@ -63,6 +67,7 @@ class WordleGame:
 
         return cmp_matrix
 
+    # Method to colorize the output based on comparison list
     def colorize_word(self, input_word: str, compare_matrix: List) -> None:
         color_dict = {0: "\033[0m", 1: "\033[93m", 2: "\033[92m"}
 
@@ -74,21 +79,20 @@ class WordleGame:
 
         print(f"{color_dict[0]}")
 
+    # Method to start the game based on initialized input
     def start_game(self) -> bool:
         wordle_words = self.read_file()
-        self.logger.debug("Wordle File Read")
 
         chosen_word = self.choose_random_word(wordle_words)
-        self.logger.debug("Wordle Word Chosen")
 
         for i in range(self.tries):
             input_word = self.get_input(i)
             comp_mtrx = self.compare_words(input_word, chosen_word)
+            self.colorize_word(input_word, comp_mtrx)
             if set(comp_mtrx) == {
                 2,
             }:
                 return True
-            self.colorize_word(input_word, comp_mtrx)
 
         print(f"Correct word was : {chosen_word.upper()}")
         return False
