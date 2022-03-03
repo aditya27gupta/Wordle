@@ -30,4 +30,4 @@ jobs:
 
     - name: Create Badge for coverage
       run: |
-        python -m src/coverage_report.py
+        python -m ./src/coverage_report.py
