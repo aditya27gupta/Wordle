@@ -12,7 +12,7 @@ coverage_match = re.search(pattern=pattern, string=file_content)
 coverage_match = float(coverage_match.group(1)) * 100
 
 
-GREY = (20, 20, 20, 255)
+GREY = (78, 78, 78, 255)
 RED = (203, 67, 53, 255)
 YELLOW = (212, 172, 13, 255)
 GREEN = (19, 141, 117, 255)
