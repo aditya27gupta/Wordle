@@ -24,11 +24,10 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Lint with Black
+    - name: Test with pytest and create coverage report
       run: |
-        python -m black $(git ls-files '*.py') -l 120 --check --diff
+        pytest --cov-report xml:cov.xml --cov=src tests/
 
-
-    - name: Test with pytest
+    - name: Create Badge for coverage
       run: |
-        pytest
+        python -m src/coverage_report.py
