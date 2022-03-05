@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import random
-from typing import Dict, List
+from typing import List
 from dataclasses import dataclass
 from logging import Logger
 
@@ -125,3 +125,13 @@ class WordleGame:
 
         except Exception as ex:
             raise Exception(ex)
+
+
+if __name__ == "__main__":
+    from log import get_logger
+
+    logger = get_logger("TEST Compare Function")
+    logger.disabled = True
+    cls_obj = WordleGame("abc", 3, logger)
+    output = cls_obj.compare_words("syste", "tyise")
+    print(output)
