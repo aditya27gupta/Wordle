@@ -18,6 +18,8 @@ def get_input() -> Tuple[str, str]:
     while True:
         input_comp_matrix = input(f"Enter compare matrix >>\n")
         if len(input_comp_matrix) == 5 and input_comp_matrix.isdigit():
+            if any([num not in ["0", "1", "2"] for num in input_comp_matrix]):
+                continue
             break
 
     return input_text, input_comp_matrix
