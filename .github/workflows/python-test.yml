@@ -22,10 +22,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Test with pytest and create coverage report
+    - name: Test with pytest
       run: |
-        pytest --cov-report xml:cov.xml --cov=src tests/
-
-    - name: Create Badge for coverage
-      run: |
-        python src/coverage_report.py
+        pytest --cov=src tests/
