@@ -1,15 +1,16 @@
 import re
+
 from PIL import Image, ImageDraw, ImageFont
+import subprocess
 
-coverage_file_loc = "cov.xml"
+pytest_coverage_report = subprocess.run(["pytest", "--cov=src"], stdout=subprocess.PIPE)
+report = pytest_coverage_report.stdout.decode("utf-8")
+coverage = report.split("TOTAL")[-1]
 
-with open(coverage_file_loc, "r") as file:
-    file_content = file.read()
 
-
-pattern = r"line-rate=\"([\d\.]+)\""
-coverage_match = re.search(pattern=pattern, string=file_content)
-coverage_match = float(coverage_match.group(1)) * 100
+pattern = r"\d+%"
+coverage_match = re.search(pattern=pattern, string=coverage)
+coverage_match = coverage_match.group()
 
 
 GREY = (100, 100, 100, 255)
@@ -18,9 +19,11 @@ YELLOW = (212, 172, 13, 255)
 GREEN = (19, 141, 117, 255)
 WHITE = (255, 255, 255, 255)
 
-if coverage_match < 30:
+coverage_value = int(coverage_match[:-1])
+
+if coverage_value < 30:
     FILL_COLOR = RED
-elif coverage_match < 60:
+elif coverage_value < 60:
     FILL_COLOR = YELLOW
 else:
     FILL_COLOR = GREEN
@@ -37,5 +40,5 @@ d.rounded_rectangle((WIDTH_TEXT, 0, WIDTH_TOTAL, HEIGHT), radius=4, fill=FILL_CO
 d.line((WIDTH_TEXT, 0, WIDTH_TEXT, HEIGHT), width=5, fill=GREY)
 fnt = ImageFont.truetype(font="./assets/OpenSans.ttf", size=12)
 d.text((10, 2), "Coverage", fill=WHITE, font=fnt)
-d.text((71, 2), f"{int(coverage_match)} %", fill=WHITE, font=fnt)
+d.text((74, 2), coverage_match, fill=WHITE, font=fnt)
 txt.save("./assets/coverage_image.png", format="PNG")
