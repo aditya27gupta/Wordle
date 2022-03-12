@@ -44,9 +44,8 @@ Wordle Word: **S T R A P S**
 
 Input: **S L E E P**
 
-Here S will be colored green
-L E E will not be colored differently
-and P will be colored yellow
+Here S will be colored green, L E E will not be colored differently and P will be colored yellow.
+
 So, compare matrix will be: **20001**
 
 
