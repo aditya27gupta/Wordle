@@ -54,4 +54,3 @@ So, compare matrix will be: **20001**
 ```python
 python3 src/wordle_word_suggestor.py
 ```
-

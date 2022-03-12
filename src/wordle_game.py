@@ -49,7 +49,11 @@ class WordleGame:
 
             elif letter1 in chosen_word:
                 for j, _ in enumerate(chosen_word):
-                    if letter1 == chosen_word[j] and input_word[j] != chosen_word[j] and not chosen_word_mark[j]:
+                    if (
+                        letter1 == chosen_word[j]
+                        and input_word[j] != chosen_word[j]
+                        and not chosen_word_mark[j]
+                    ):
                         cmp_matrix.append(1)
                         chosen_word_mark[j] = True
                         check = False
@@ -59,7 +63,9 @@ class WordleGame:
             else:
                 cmp_matrix.append(0)
 
-            self.logger.debug(f"Letter from Input: {letter1} and compare_matrix: {cmp_matrix}")
+            self.logger.debug(
+                f"Letter from Input: {letter1} and compare_matrix: {cmp_matrix}"
+            )
             self.logger.debug(f"Chosen Word Letter Status: {chosen_word_mark}")
 
         return cmp_matrix
