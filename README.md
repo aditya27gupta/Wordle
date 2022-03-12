@@ -30,7 +30,7 @@ python3 src/main.py
 ```
 
 
-### How to use Wordle Word Suggestor
+## How to use Wordle Word Suggestor
 
 Compare matrix is defined with numbers ranging from 0 to 2.
 - When the letter is colored green, compare matrix value is 2
