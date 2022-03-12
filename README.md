@@ -24,18 +24,18 @@ L would be normal as it is not present in Wordle Word
 P would be colored Yellow implying it is present in word just in wrong position
 
 
-### Run Wordle Game
+#### Run Wordle Game
 ```python
 python3 src/main.py
 ```
 
 
-## How to use Wordle Word Suggestor
+### How to use Wordle Word Suggestor
 
 Compare matrix is defined with numbers ranging from 0 to 2.
-When the letter is colored green, compare matrix value is 2
-When the letter is colored yellow, compare matrix value is 1
-When the letter is not colored, compare matrix value is 0
+- When the letter is colored green, compare matrix value is 2
+- When the letter is colored yellow, compare matrix value is 1
+- When the letter is not colored, compare matrix value is 0
 
 
 Example:
@@ -50,7 +50,7 @@ and P will be colored yellow
 So, compare matrix will be: **20001**
 
 
-### Run Wordle Word Suggestor
+#### Run Wordle Word Suggestor
 ```python
 python3 src/wordle_word_suggestor.py
 ```
