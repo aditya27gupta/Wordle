@@ -2,6 +2,7 @@
 
 
 ![Pytest](https://github.com/aditya27gupta/Wordle/actions/workflows/python-test.yml/badge.svg)
+![CodeQL](https://github.com/aditya27gupta/Wordle/actions/workflows/codeql-analysis.yml/badge.svg)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![coverage-report](./assets/coverage_image.png?raw=true "Coverage Report")
 ![GitHub repo size](https://img.shields.io/github/repo-size/aditya27gupta/WORDLE)
