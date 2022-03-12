@@ -1,0 +1,5 @@
+12-Mar-22 13:04:56 : main.py : <module> : DEBUG : File Loc: ./assets/wordle-words.txt
+12-Mar-22 13:04:56 : main.py : <module> : DEBUG : No of Tries: 6
+12-Mar-22 13:04:56 : main.py : <module> : DEBUG : wordleGame Class Intantiated
+12-Mar-22 13:04:56 : wordle_game.py : read_file : DEBUG : File Read
+12-Mar-22 13:04:56 : wordle_game.py : choose_random_word : DEBUG : Random Word Selected: cuyas
